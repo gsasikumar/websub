@@ -2,9 +2,6 @@ name: Ballerina Build and push
 
 on:
   push:
-    branches:
-      - develop
-      - **
   
 jobs:
 
