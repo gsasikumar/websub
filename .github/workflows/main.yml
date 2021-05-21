@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     env: 
       NAMESPACE: ${{ secrets. dev_namespace_docker_hub }}
-      SERVICE_NAME: websub-server
+      SERVICE_NAME: websub-service
   
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
