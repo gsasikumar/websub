@@ -39,7 +39,7 @@ jobs:
       - name: Install ballerina
         run: |
          wget -q --show-progress https://dist.ballerina.io/downloads/1.2.13/ballerina-linux-installer-x64-1.2.13.deb
-         dpkg -i ballerina-linux-installer-x64-1.2.13.deb
+         sudo dpkg -i ballerina-linux-installer-x64-1.2.13.deb
 
       - name: Ballerina Build
         run: |
