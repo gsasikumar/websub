@@ -43,7 +43,7 @@ jobs:
 
       - name: Ballerina Build
         run: |
-         ballerina build -all
+         ballerina build --all
          
       - name: Build image
         run: |
