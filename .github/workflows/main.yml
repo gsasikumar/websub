@@ -35,12 +35,9 @@ jobs:
          # Strip git ref prefix from version
          echo "BRANCH_NAME=$(echo ${{ github.ref }} | sed -e 's,.*/\(.*\),\1,')" >> $GITHUB_ENV
          echo "GPG_TTY=$(tty)" >> $GITHUB_ENV
+         echo "JAVA_HOME" >> $GITHUB_ENV
+         echo $JAVA_HOME
 
-      - name: setup environment
-        run: |
-          # Strip git ref prefix from version
-          echo "GPG_TTY=$(tty)" >> $GITHUB_ENV
-          echo "BRANCH_NAME=$(echo ${{ github.ref }} | sed -e 's,.*/\(.*\),\1,')" >> $GITHUB_ENV
       - name: Ballerina Build
         uses: ballerina-platform/ballerina-action/@master
         with:
